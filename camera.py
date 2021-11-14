@@ -46,8 +46,9 @@ time.sleep(2)
 
 class Video(object):
     def __init__(self):
-        COUNTER = 0
+        self.COUNTER = 0
         self.video=cv2.VideoCapture(0)
+        
 
     def __del__(self):
         self.video.release()
